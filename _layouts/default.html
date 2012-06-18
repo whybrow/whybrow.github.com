@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="Marcus Whybrow">
+    
+    <link rel="author" href="https://plus.google.com/103832793361409130288/posts">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      // Google Analytics Code
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32722560-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Whybrow</a>
+
+          <ul class="nav">
+            <li{% if page.tab == "home" %} class="active"{% endif %}><a href="/">Home</a></li>
+<!--             <li{% if page.tab == "updates" %} class="active"{% endif %}><a href="/updates/">Updates</a></li>
+            <li{% if page.tab == "minecraft" %} class="active"{% endif %}><a href="/minecraft/">Minecraft</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {{content}}
+
+    <!-- Scripts -->
+    {% include scripts.html %}
+    <script type="text/javascript">
+      if (typeof jQuery != 'undefined') {
+        $(function() {
+          
+        });
+      } else {
+        console.warn('jQuery is required and was not loaded. Some page elements may not appear. Sorry about that.');
+      }
+    </script>
+  </body>
+</html>

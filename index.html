@@ -1,9 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  </head>
-  <body>
+---
+layout: default
+title: Whybrow Community
+tab: home
+---
+
+<div class="masthead container">
+  <div>
     <h1>Whybrow Community</h1>
-    <p>Testing the github pages installation.</p>
-  </body>
-</html>
+    <p>Games. TeamSpeak and fun!</p>
+  </div>
+</div>
+
+<div class="quick-info container">
+  <div class="row">
+    <div class="span3">
+      <h2>Minecraft</h2>
+      <div class="address">
+        <p>mc.whybrow.org.uk</p>
+        <p>or 86.29.84.196</p>
+      </div>
+    </div>
+
+    <div class="span3">
+      <h2>TeamSpeak</h2>
+      <div class="address">
+        <p>ts.whybrow.org.uk</p>
+        <p>or 86.29.84.196</p>
+      </div>
+    </div>
+
+    <div class="span3">
+      <h2>Killing Floor</h2>
+      <div class="address">
+        <p>kf.whybrow.org.uk</p>
+        <p>or 86.29.84.196</p>
+      </div>
+    </div>
+
+    <div class="span3">
+      <h2>Left4Dead 2</h2>
+      <div class="address">
+        <p>l4d2.whybrow.org.uk</p>
+        <p>or 86.29.84.196</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="people container">
+  <h1>Featuring</h1>
+
+  <p class="byline">A cast of crazy characters</p>
+
+  <div class="player" rel="tooltip" title="craftyssaurus">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=craftysaurus&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <div class="player" rel="tooltip" title="MrWizardBeef">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=MrWizardBeef&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <div class="player" rel="tooltip" title="TheRebelIan">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=TheRebelIan&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <div class="player" rel="tooltip" title="iamfletch">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=iamfletch&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <div class="player" rel="tooltip" title="Cat_Soup">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=Cat_Soup&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <div class="player" rel="tooltip" title="JamiePed">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=JamiePed&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <div class="player" rel="tooltip" title="whybrow">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=whybrow&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <div class="player" rel="tooltip" title="tomlad">
+    <iframe src="http://marcuswhybrow.github.com/minecraft-widgets/skin.html?playername=tomlad&amp;scale=5" width="80" height="160" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  </div>
+
+  <p class="others">And others...</p>
+</div>
+
+{% include scripts.html %}
+<script type="text/javascript">
+  if (typeof jQuery != 'undefined') {
+    $(function() {
+      $('.people .player').tooltip();
+    });
+  }
+</script>
