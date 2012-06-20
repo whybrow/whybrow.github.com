@@ -24,7 +24,7 @@ tab: home
     <div class="span3">
       <h2>TeamSpeak</h2>
       <div class="address">
-        <p>ts.whybrow.org.uk</p>
+        <p><a href="ts3server://ts.whybrow.org.uk" rel="tooltip" title="Launch TeamSpeak">ts.whybrow.org.uk</a></p>
         <p>or 86.29.84.196</p>
       </div>
     </div>
@@ -100,6 +100,9 @@ tab: home
   if (typeof jQuery != 'undefined') {
     $(function() {
       $('.people .player').tooltip();
+      $('a[rel="tooltip"]').tooltip({
+        placement: 'left'
+      });
     });
   }
 </script>
