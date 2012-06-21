@@ -117,3 +117,22 @@ body {
 .people .others {
   margin-top: 40px;
 }
+
+
+
+.navbar #status.nav .status-up a {
+  color: #00ff00;
+}
+.navbar #status.nav .status-down a {
+  color: #ff0000;
+}
+.navbar #status.nav.up .status-down {
+  display: none;
+}
+.navbar #status.nav.down .status-up {
+  display: none;
+}
+
+.popover-title {
+  text-align: center;
+}
